@@ -95,3 +95,9 @@ main{
     width: 100%;
     height: 100vh;
 }
+
+.contact-list a i{
+    color:var(--lightBlue);
+    font-size: 1.6em;
+    margin: 1em 1em;
+}

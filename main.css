@@ -82,6 +82,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .text-container h1{
@@ -110,4 +111,27 @@ main{
     color:var(--lightBlue);
     font-size: 1.6em;
     margin: 1em 1em;
+}
+
+.projects-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.projects-container h1{
+    width: 80%;
+    text-align: center;
+    font-size: 3em;
+    color: var(--lightBlue);
+    margin: 10px 0;
+    text-shadow: var(--darkBlue) 5px 5px;
+}
+
+.projects-container p{
+    text-align: center;
+    color: var(--grey);
 }

@@ -1,0 +1,30 @@
+// Open modal on card click
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function () {
+      const modalId = this.dataset.modal;
+      const modal = document.getElementById(modalId);
+      modal.style.display = 'flex';
+      setTimeout(() => modal.classList.add('show'), 10); // Add class for animation
+    });
+  });
+  
+  // Close modal when the close button is clicked
+  document.querySelectorAll('.modal .close').forEach(closeBtn => {
+    closeBtn.addEventListener('click', function () {
+      const modal = this.closest('.modal');
+      modal.classList.remove('show'); // Remove animation class
+      setTimeout(() => (modal.style.display = 'none'), 300); // Wait for animation to finish
+    });
+  });
+  
+  // Close modal when clicking outside the modal content
+  window.addEventListener('click', function (event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.classList.remove('show'); // Remove animation class
+        setTimeout(() => (modal.style.display = 'none'), 300); // Wait for animation to finish
+      }
+    });
+  });
+  

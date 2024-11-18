@@ -16,6 +16,19 @@
             <h1>Josh</h1>
             <h1>Beckley.</h1>
             <p>Aspiring Data Scientist</p>
+            <div class="icon-buttons">
+              <a href="https://github.com/joshbeckley" target="_blank" class="icon-button">
+                  <img src="github.svg" alt="" width="30px" height="30px">
+              </a>
+      
+              <a href="https://www.linkedin.com/in/joshbeckley/" target="_blank" class="icon-button">
+                  <img src="linked.svg" alt="" width="30px" height="30px">
+              </a>
+      
+              <a href="mailto:josh@beckley.com" target="_blank" class="icon-button">
+                  <img src="email.svg" alt=""  width="30px" height="30px">
+              </a>
+            </div>
         </div>
     </div>
 
@@ -39,23 +52,72 @@
         <li>19 year old passionate software developer and aspiring data scientist</li>
         <li>Currently in my first year at Stellenbosch University studying BDatSci</li>
       </ul>
-      
-        <div class="icon-buttons">
-        <a href="https://github.com/joshbeckley" target="_blank" class="icon-button">
-            <img src="github.svg" alt="">
-        </a>
+    </div>
 
-        <a href="https://www.linkedin.com/in/joshbeckley/" target="_blank" class="icon-button">
-            <img src="linked.svg" alt="">
-        </a>
+    <a href="#experience-screen" class="scroll-link">
+      <div class="scroll-section">
+          <p>click for my experience</p>
+          <div class="chevrons">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+          </div>
+      </div>
+  </a>
+  </section>
 
-        <a href="mailto:josh@beckley.com" target="_blank" class="icon-button">
-            <img src="email.svg" alt="">
-        </a>
+  <<section class="experience-screen" id="experience-screen">
+    <div class="experience-content">
+      <h2>Experience</h2>
+
+      <div class="card-list">
+        <!-- Card 1 -->
+        <div class="card" data-modal="modal1">
+          <h3>Card 1</h3>
+          <p>Click to see more details</p>
         </div>
+      
+        <!-- Card 2 -->
+        <div class="card" data-modal="modal2">
+          <h3>Card 2</h3>
+          <p>Click to see more details</p>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card" data-modal="modal3">
+          <h3>Card 3</h3>
+          <p>Click to see more details</p>
+        </div>
+      </div>
+      
+      <!-- Modals -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Details for Card 1</h2>
+          <p>This is the detailed content for Card 1.</p>
+        </div>
+      </div>
+      
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Details for Card 2</h2>
+          <p>This is the detailed content for Card 2.</p>
+        </div>
+      </div>
+      
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Details for Card 3</h2>
+          <p>This is the detailed content for Card 3.</p>
+        </div>
+      </div>
+      
     </div>
   </section>
 
-
+  <script src="app.js"></script>
 </body>
 </html>
